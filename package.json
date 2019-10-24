@@ -1,0 +1,27 @@
+{
+  "name": "dark-proxy",
+  "version": "1.0.0",
+  "description": "A proxy server to secure calls to the Dark Sky API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "proxy",
+    "server"
+  ],
+  "author": "Antonio Santos",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dark-sky": "^1.1.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.2",
+    "request": "^2.88.0"
+  }
+}
