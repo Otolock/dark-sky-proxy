@@ -9,7 +9,7 @@ const http = require('http'); // delete when https is enabled.
 const express = require('express');
 const cors = require('cors');
 const basicAuth = require('express-basic-auth');
-const morgan = require('morgan')
+const morgan = require('morgan');
 const DarkSky = require('dark-sky');
 
 const app = express();
@@ -20,7 +20,7 @@ app.use(morgan('combined'));
 app.use(
   basicAuth({
     users: {
-      ios: 'wordbook_hitch_swear_deflect',
+      sampleUser: 'sample_password',
     },
     unauthorizedResponse: getUnauthorizedResponse,
   }),
